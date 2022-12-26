@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script src="index.js">
+    function displayDate(){
+        document.getElementById("demo").innerHTML=Date();
+    }
+document.write("<h1>title</h1>")
+document.write("<p>para</p>")
+</script>
+</head>
+<body>
+
+<h1>first javascript</h1>
+<p id="demo">show date</p>
+<p id="trans" >你好 JS</p>
+<input id="inp" type="text">
+<script>
+    // alert("javascript")
+    function myfunction(){
+        var b=document.getElementById("inp").value;
+        if(b==""||isNaN(b)){
+            alert("不是数字");
+        }
+    }
+</script>
+<button type="button" onclick="myfunction()">check</button>
+<button type="button" onclick="displayDate()">date</button>
+<button type="button" onclick="transaction()">transaction</button>
+<button type="button" onclick="alert('欢迎!')">click me</button>
+</body>
+</html>
